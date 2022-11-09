@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav_bar {
+            border: 1px solid red;
+        }
+
+        #nav_bar>div {
+            border: 1px solid black;
+
+            margin: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #nav_bar>div:nth-child(1)>img {
+            width: 10%;
+        }
+
+        #search_bar {
+            height: 50px;
+            width: 50%;
+        }
+
+        #nav_bar>div:nth-child(1) {
+            font-size: small;
+            font-weight: bolder;
+        }
+
+        #nav_bar>div:nth-child(2) {
+            font-size: small;
+            font-weight: bolder;
+        }
+
+        #nav_bar>div:nth-child(3) {
+            font-size: small;
+            font-weight: bolder;
+        }
+
+
+        #nav_bar>div:nth-child(2)>img {
+            width: 3%;
+        }
+
+        #slider {
+            margin-top: 2%;
+            border: 1px solid green;
+            position: relative;
+        }
+
+       
+        #below_slider{
+            
+            height: auto;
+            background-color: aqua;
+            margin: 20px;
+        }
+       
+
+        #below_slider>div:nth-child(1){
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #below_slider>div:nth-child(2){
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #below_slider>div:nth-child(3){
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            display: flex;
+            justify-content: left;
+        }
+
+        #below_slider>div:nth-child(3)>div:nth-child(2){margin-left: 20px;
+        }
+   
+       #below_slider>div>div{
+        background-color: yellow;
+        height: 100px;
+        width: 30%;
+        display: flex;
+       }
+       /* Two parts starting here */
+
+       #two_parts{
+        height: 200px;
+        background-color: red;
+        display: flex;
+        justify-content: space-around;
+       }
+       #two_parts>div{
+        background-color: yellow;
+        height: 100%;
+        width: 45%;
+       }
+
+       #two_parts>div{display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+
+       #tranding_section{
+        background-color: red;
+        height: auto;
+       }
+
+       #Tranding_products{
+        display: flex;
+        justify-content: space-evenly;
+       }
+       #Tranding_products>div{
+        width: 30%;    
+    }
+       #Tranding_products>div>img{
+        width: 100%;
+       }
+
+       #Tranding_products>button{
+        border-radius: 10px 10px;
+        height: 40px;    
+    }
+    /* tranding section end */
+    #limited_time_product{
+        height: 200px;
+        background-color:purple;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #limited_time_product>div{
+        height: 200px;
+        width: 19%;
+    background-color: aliceblue;
+        
+    }
+
+
+    #limited_time_product{
+        background-color: aqua;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #limited_time_product>div{
+        background-color: blue;
+        height: 100%;
+        width: 18%;
+    }
+    #limited_time_product>div>img{
+    
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="nav_bar">
+        <div>
+            <img src="file:///C:/Users/pcs/Downloads/netmeds.png" alt="">
+            <input type="text" name="" id="search_bar" placeholder="search for medicine and wellness products">
+            <h3>Upload</h3>
+            <h3>cart</h3>
+            <h3>singin/singup</h3>
+
+        </div>
+        <div>
+
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+            <h3>Medicine</h3>
+
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+            <h3>Wellness</h3>
+
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+            <h3>Lab Test</h3>
+
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+            <h3>Beauty</h3>
+
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+            <h3>Health Corner</h3>
+
+        </div>
+        <div>
+            <h3>COVID Essentials</h3>
+            <h3>Diabetes</h3>
+            <h3>Eyewear</h3>
+            <h3>Ayush</h3>
+            <h3>Ayurvedic</h3>
+            <h3>Homeopathy</h3>
+            <h3>Fitness</h3>
+            <h3>Mom & Baby</h3>
+            <h3>Devices</h3>
+            <h3>Surgicals</h3>
+            <h3>Sexual Wellness</h3>
+            <h3>Treatments</h3>
+        </div>
+    </div>
+    <div id="slider"></div>
+
+   <div id="below_slider">
+    <div>
+       <div>
+        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+        <div><h3>our medicine</h3>
+        <p>save upto 50%</p></div>
+
+       </div>
+       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+        <div>
+            <h3>our medicine </h3>
+            <p>save upto 50%</p>
+        </div>
+    </div>
+       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+    <div><h3>our medicine</h3><p>save upto 50%</p></div>
+    </div>
+    </div>
+    <div>
+        <div><h2>Payment partener</h2></div>
+       <div>view All</div>
+      
+    </div>
+    <div>
+        <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt=""><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi iure, sequi earum nesciunt velit?</p></div>
+       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsam, quos aliquid qui odit facere.</div>
+       
+    </div>
+   </div>
+
+   <div id="two_parts">
+    <div>
+        <div><h4>Privious Orders</h4>
+        <p>Your previously ordered products</p>
+    <button>View Orders</button></div>
+        <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/beauty_products.svg" alt=""></div>
+    </div>
+    <div>
+        <div>
+            <h4>Beauty Products</h4>
+            <p>Save Upto 40% off</p>
+            <button>Exploer Beauty</button>
+        </div>
+        <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/previous_orders.svg" alt=""></div>
+    </div>
+   </div>
+   <div id="tranding_section">
+    <div><h3>Tranding Today</h3></div>
+    <div id="Tranding_products"></div>
+   </div>
+   <div id="limited_time_product">
+
+   </div>
+</body>
+
+</html>
+
+<script>
+    let slider_img_arr = ["https://www.netmeds.com/images/cms/aw_rbslider/slides/1667916562_Web_Home_Bannerdsdg.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1667832066_Web_Home_Bannercabbb.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362102_Home_Bannernmsnew.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362146_Home_Bannernms20.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666355540_Home_Bannercold.jpg"]
+
+    let slider = document.querySelector("#slider")
+
+    var count = 0;
+    var slide = setInterval(() => {
+            slider.innerHTML=""
+        if (count == 2) {
+        clearInterval(slide)
+    }
+        
+        let slider_img = document.createElement("img");
+        slider_img.src = slider_img_arr[count]
+        slider_img.left =`${count * 100}%`
+        slider.append(slider_img)
+        console.log(count)
+        count += 1
+       
+    }, 2000);
+    if (count == 2) {
+        clearInterval(slide)
+    }
+
+var trandind_img = ["https://www.netmeds.com/images/cms/aw_rbslider/slides/1667462507_Web_Home_Page_Mini_Banner-436X224__.png",
+    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1667806581_Breath-Easy_wellness_Mobile.jpg",
+    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1665742857_Dabur_Home.jpg",
+    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1667558538_Dr.Morepen-40-APP-W.jpg",
+    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1667558932_United_Medicare_mini_web.jpg",
+    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1667559248_Durex_Mini_banner_web.jpg",]
+
+displayTranding(trandind_img)
+function displayTranding(arr)
+{   var count=0
+    trand_interval = setInterval((function(){
+        document.querySelector("#Tranding_products").innerHTML=""
+        var div1 = document.createElement("div")
+        var div2 = document.createElement("div")
+        var div3 = document.createElement("div")
+
+        var img1 = document.createElement("img")
+        img1.src = arr[count]
+        div1.append(img1)
+        var img2 = document.createElement("img")
+        img2.src = arr[count+1]
+        div2.append(img2)
+        var img3 = document.createElement("img")
+        img3.src = arr[count+2];
+        div3.append(img3)
+        count+=1;
+        var button1 = document.createElement("button");
+        button1.innerText= "<"
+        button1.addEventListener("click",function(){
+            clearInterval(trand_interval)
+            
+            console.log(count)
+
+            img1.src = arr[count]
+            img2.src = arr[count+1]
+            img3.src = arr[count+2]
+
+            count+=1
+            if(count==arr.length-2)
+        {
+            count=0
+        }
+            
+        })
+        var button2 = document.createElement("button");
+        button2.innerText = ">"
+        document.querySelector("#Tranding_products").append(button1,div1,div2,div3,button2)
+        if(count==arr.length-2)
+        {
+            count=0
+        }
+    }),2000)
+        
+        
+    
+}
+    
+
+    var url = "https://636b7dc9ad62451f9fb32df1.mockapi.io/product2"
+
+    var limited_time_product_arr =[]
+
+    function displayLimitedTime(arr){    
+        document.querySelector("#limited_time_product").innerHTML=""
+        // img1,h3,h3
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img");
+        img1.src = arr[0].avatar
+        var name1 = document.createElement("h3")
+        name1.innerText = arr[0].name
+        var price1 = document.createElement("h3")
+        price1.innerText=arr[0].price
+
+        var div2 = document.createElement("div")
+        var img2 = document.createElement("img");
+        img2.src = arr[0].avatar
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[0].avatar
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[0].avatar
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[0].avatar
+
+
+        var button = document.createElement("button")
+        button.innerText="Add To Cart"
+
+        div1.append(img1,name1,price1,button)
+        div2.append(img2)
+        div3.append(img3)
+        div4.append(img4)
+        div5.append(img5)
+
+
+        
+
+
+        document.querySelector("#limited_time_product").append(div1,div2,div3,div4,div5)
+          
+    }
+
+    
+    "https://www.netmeds.com/images/product-v1/150x150/1042880/truuth_adult_diaper_strap_m_1s_476355_0_1.jpg"
+    "https://www.netmeds.com/images/product-v1/150x150/1038910/tynor_life_heating_pad_ortho_mini_1s_394603_0_0.jpg"
+    "https://www.netmeds.com/images/product-v1/150x150/917051/la_shield_lite_spf_30_pa_anti_tanning_sunscreen_gel_30_gm_0_1.jpg"
+    "https://www.netmeds.com/images/product-v1/150x150/413011/pankajakasthuri_orthoherb_tablet_60_s_0.jpg"
+    "https://www.netmeds.com/images/product-v1/150x150/341494/liv_52_tablet_100_s_0.jpg"
+   
+</script>
