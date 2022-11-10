@@ -137,37 +137,171 @@
         height: 40px;    
     }
     /* tranding section end */
-    #limited_time_product{
-        height: 200px;
-        background-color:purple;
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-evenly;
-    }
+    #limited_time{
+    height: 400px;
+    background-color: aqua;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+   }
 
-    #limited_time_product>div{
-        height: 200px;
-        width: 19%;
-    background-color: aliceblue;
-        
-    }
-
-
-    #limited_time_product{
-        background-color: aqua;
-        height: 300px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    #limited_time_product>div{
-        background-color: blue;
-        height: 100%;
-        width: 18%;
-    }
-    #limited_time_product>div>img{
+   #limited_time>div{
+    width: 18%;
+    height: 100%;
+    background-color: green;
     
-        width: 100%;
+   }
+   #limited_time>div>img{
+    width: 100%;
+   }
+
+   #limited_time_parent>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+   }
+   /* energy booster */
+   #energy_booster{
+    height: 400px;
+    background-color: aqua;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+   #energy_booster>div{
+    width: 18%;
+    height: 100%;
+    background-color: green;
+    
+   }
+   #energy_booster>div>img{
+    width: 100%;
+   }
+
+   /* energy booster start here */
+   #energy_booster_parent{
+    padding-left: 50px;
+   }
+  
+   
+   #energy_booster_parent>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+   }
+   /* brand days */
+   #brand_days{
+    height: 400px;
+    background-color: aqua;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+   #brand_days>div{
+    width: 18%;
+    height: 100%;
+    background-color: green;
+    
+   }
+   #brand_days>div>img{
+    width: 100%;
+   }
+
+
+   #brand_days_parent{
+    padding-left: 50px;
+   }
+  
+   
+   #brand_days_parent>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+   }
+
+   /*shop_by_ctegory*/
+   #shop_by_ctegory{
+    height: 400px;
+    background-color: aqua;
+    margin-top: 10px;
+    display: grid;
+        grid-template-columns: repeat(5,1fr)
+   }
+
+   #shop_by_ctegory>div{
+    width: 18%;
+    height: 100%;
+    background-color: green;
+    
+   }
+   #shop_by_ctegory>div>img{
+    width: 100%;
+   }
+
+
+   #shop_by_ctegory_parent{
+    padding-left: 50px;
+   }
+  
+   
+   #shop_by_ctegory_parent>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+   }
+
+   /* new on netmeds */
+
+   #new_on_netmeds_parent{
+        background-color: red;
+        height: auto;
+       }
+
+       #new_on_netmeds{
+        display: flex;
+        justify-content: space-evenly;
+       }
+       #new_on_netmeds>div{
+        width: 30%;    
     }
+       #new_on_netmeds>div>img{
+        width: 100%;
+       }
+
+       #new_on_netmeds>button{
+        border-radius: 10px 10px;
+        height: 40px;    
+    }
+
+    /* top brand */
+
+    #top_brand{
+    height: 400px;
+    background-color: aqua;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+   #top_brand>div{
+    width: 18%;
+    height: 100%;
+    background-color: green;
+    
+   }
+   #top_brand>div>img{
+    width: 100%;
+   }
+
+
+   #top_brand_parent{
+    padding-left: 50px;
+   }
+  
+   
+   #top_brand_parent>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+   }
+
     </style>
 </head>
 
@@ -178,7 +312,7 @@
             <input type="text" name="" id="search_bar" placeholder="search for medicine and wellness products">
             <h3>Upload</h3>
             <h3>cart</h3>
-            <h3>singin/singup</h3>
+            <h3 id="singin"> <a href="C:\Users\pcs\Desktop\project\singin.html"> singin/singup</a></h3>
 
         </div>
         <div>
@@ -266,15 +400,70 @@
     <div><h3>Tranding Today</h3></div>
     <div id="Tranding_products"></div>
    </div>
-   <div id="limited_time_product">
-
+<div id="limited_time_parent">
+    <div> 
+        <h3>Limited Time deal</h3>
+        <h3>View all</h3> 
+    </div>
+   <div id="limited_time"></div>
    </div>
+<div id="energy_booster_parent">
+    <div>
+        <h3>Energy Booster</h3>
+        <h3>View all</h3>
+    </div>   
+    <div id="energy_booster"></div>
+</div>
+
+<div id="brand_days_parent">
+    <div>
+        <h3>Brand Days - Cetaphil Upto 32% off</h3>
+        <h3>View all</h3>
+    </div>   
+    <div id="brand_days"></div>
+</div>
+
+<div id="shop_by_ctegory_parent">
+    <div>
+        <h3>Shop by category</h3>
+        <h3>View all</h3>
+    </div>   
+    <div id="shop_by_ctegory"></div>
+</div>
+
+
+<div id="new_on_netmeds_parent">
+    <div><h3>New On Netmeds</h3></div>
+    <div id="new_on_netmeds"></div>
+   </div>
+
+   <div id="top_brand_parent">
+    <div>
+        <h3>Top Brands</h3>
+        <h3>View all</h3>
+    </div>   
+    <div id="top_brand"></div>
+</div>
+
+
+
 </body>
 
 </html>
 
 <script>
-    let slider_img_arr = ["https://www.netmeds.com/images/cms/aw_rbslider/slides/1667916562_Web_Home_Bannerdsdg.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1667832066_Web_Home_Bannercabbb.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362102_Home_Bannernmsnew.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362146_Home_Bannernms20.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666355540_Home_Bannercold.jpg"]
+
+
+
+
+
+
+
+
+
+
+
+let slider_img_arr = ["https://www.netmeds.com/images/cms/aw_rbslider/slides/1667916562_Web_Home_Bannerdsdg.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1667832066_Web_Home_Bannercabbb.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362102_Home_Bannernmsnew.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362146_Home_Bannernms20.jpg", "https://www.netmeds.com/images/cms/aw_rbslider/slides/1666355540_Home_Bannercold.jpg"]
 
     let slider = document.querySelector("#slider")
 
@@ -354,58 +543,658 @@ function displayTranding(arr)
     
 }
     
+var xr =[
+    {
+        "createdAt": "2022-11-10T04:10:11.712Z",
+        "name": "Computer",
+        "avatar": "https://www.netmeds.com/images/product-v1/150x150/407399/himalaya_wellness_shatavari_tablet_60_s_0.jpg",
+        "id": "1"
+    },
+    {
+        "createdAt": "2022-11-10T05:07:44.240Z",
+        "name": "Shirt",
+        "avatar": "https://www.netmeds.com/images/product-v1/600x600/412635/cetaphil_baby_shampoo_200ml_54141_0_1.jpg",
+        "id": "2"
+    },
+    {
+        "createdAt": "2022-11-09T15:12:54.151Z",
+        "name": "Hat",
+        "avatar": "https://www.netmeds.com/images/product-v1/150x150/909961/cetaphil_baby_mild_bar_75gm_115692_0_1.jpg",
+        "id": "3"
+    },
+    {
+        "createdAt": "2022-11-09T17:50:14.927Z",
+        "name": "Pizza",
+        "avatar": "https://www.netmeds.com/images/product-v1/150x150/410529/cetaphil_baby_daily_lotion_400ml_52341_0_3.jpg",
+        "id": "4"
+    },
+    {
+        "createdAt": "2022-11-09T21:41:49.219Z",
+        "name": "Salad",
+        "avatar": "https://www.netmeds.com/images/product-v1/150x150/412635/cetaphil_baby_shampoo_200ml_54141_0_1.jpg",
+        "id": "5"
+    },
+    {
+        "createdAt": "2022-11-09T17:16:11.662Z",
+        "name": "Cheese",
+        "avatar": "https://www.netmeds.com/images/product-v1/150x150/958247/cetaphil_baby_daily_with_organic_calendula_lotion_400ml_205797_0_1.jpg",
+        "id": "6"
+    },
+    {
+        "createdAt": "2022-11-09T14:57:44.830Z",
+        "name": "Gloves",
+        "avatar": "https://www.netmeds.com/images/product-v1/150x150/412634/cetaphil_baby_massage_oil_200ml_54140_0_1.jpg",
+        "id": "7"
+    },
+    
+]
 
-    var url = "https://636b7dc9ad62451f9fb32df1.mockapi.io/product2"
-
-    var limited_time_product_arr =[]
-
-    function displayLimitedTime(arr){    
-        document.querySelector("#limited_time_product").innerHTML=""
-        // img1,h3,h3
+   
+    limited_time(xr)
+    energy_booster(xr)
+    brand_days(xr)
+    shop_by_ctegory(xr)
+    new_on_netmeds(trandind_img)
+    top_brand(xr)
+    function limited_time(arr)
+    {
+        var button1 = document.createElement("button")
+        button1.innerText="Add To Cart"
+        button1.addEventListener("click",function(){
+            console.log("hello")
+        })
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
-        img1.src = arr[0].avatar
-        var name1 = document.createElement("h3")
-        name1.innerText = arr[0].name
-        var price1 = document.createElement("h3")
-        price1.innerText=arr[0].price
+        img1.src = arr[0].avatar;
+        
+        var details1 = document.createElement("h3")
+        details1.innerText = arr[1].name
 
+        var price1 = document.createElement("h4")
+        price1.innerText=arr[1].createdAt
+
+        div1.append(img1,details1,price1,button1)
+
+
+
+        var button2 = document.createElement("button")
+        button2.innerText="Add To Cart"
+        button2.addEventListener("click",function(){
+            console.log("hello")
+        })
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
-        img2.src = arr[0].avatar
-        var div3 = document.createElement("div")
-        var img3 = document.createElement("img");
-        img3.src = arr[0].avatar
-        var div4 = document.createElement("div")
-        var img4 = document.createElement("img");
-        img4.src = arr[0].avatar
-        var div5 = document.createElement("div")
-        var img5 = document.createElement("img");
-        img5.src = arr[0].avatar
+        img2.src = arr[1].avatar
 
+        var details2 = document.createElement("h3")
+        details2.innerText = arr[1].name
 
-        var button = document.createElement("button")
-        button.innerText="Add To Cart"
+        var price2 = document.createElement("h4")
+        price2.innerText=arr[1].createdAt
 
-        div1.append(img1,name1,price1,button)
-        div2.append(img2)
-        div3.append(img3)
-        div4.append(img4)
-        div5.append(img5)
-
-
+        div2.append(img2,details2,price2,button2)
         
 
 
-        document.querySelector("#limited_time_product").append(div1,div2,div3,div4,div5)
-          
+        var button3 = document.createElement("button")
+        button3.innerText="Add To Cart"
+        button3.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[3].avatar
+        
+        var details3 = document.createElement("h3")
+        details3.innerText = arr[1].name
+
+        var price3 = document.createElement("h4")
+        price3.innerText=arr[1].createdAt
+
+        div3.append(img3,details3,price3,button3)
+
+
+        var button4 = document.createElement("button")
+        button4.innerText="Add To Cart"
+        button4.addEventListener("click",function(){
+            console.log("hello")
+        })
+        
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[4].avatar
+        
+        var details4 = document.createElement("h3")
+        details4.innerText = arr[1].name
+
+        var price4 = document.createElement("h4")
+        price4.innerText=arr[1].createdAt
+
+        div4.append(img4,details4,price4,button4)
+        
+
+
+        var button5 = document.createElement("button")
+        button5.innerText="Add To Cart"
+        button5.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[5].avatar;
+
+        var details5 = document.createElement("h3")
+        details5.innerText = arr[1].name
+
+        var price5 = document.createElement("h4")
+        price5.innerText=arr[1].created
+
+        div5.append(img5,details5,price5,button5)
+
+
+        var pre_button = document.createElement("button")
+        pre_button.innerText = "prev"
+        var c=1
+        pre_button.addEventListener("click",function()
+        {   c-=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==0)
+            {
+                c=arr.length-1
+            }
+        })
+
+       
+        var next_button = document.createElement("button");
+        next_button.innerText = "next"
+
+        next_button.addEventListener("click",function()
+        {   c+=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==arr.length-3)
+            {
+                c=0
+            }
+        })
+
+        document.querySelector("#limited_time").append(pre_button,div1,div2,div3,div4,div5,next_button)
+
+
     }
 
+    function energy_booster(arr)
+    {
+        var button1 = document.createElement("button")
+        button1.innerText="Add To Cart"
+        button1.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img");
+        img1.src = arr[0].avatar;
+        
+        var details1 = document.createElement("h3")
+        details1.innerText = arr[1].name
+
+        var price1 = document.createElement("h4")
+        price1.innerText=arr[1].createdAt
+
+        div1.append(img1,details1,price1,button1)
+
+
+
+        var button2 = document.createElement("button")
+        button2.innerText="Add To Cart"
+        button2.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div2 = document.createElement("div")
+        var img2 = document.createElement("img");
+        img2.src = arr[1].avatar
+
+        var details2 = document.createElement("h3")
+        details2.innerText = arr[1].name
+
+        var price2 = document.createElement("h4")
+        price2.innerText=arr[1].createdAt
+
+        div2.append(img2,details2,price2,button2)
+        
+
+
+        var button3 = document.createElement("button")
+        button3.innerText="Add To Cart"
+        button3.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[3].avatar
+        
+        var details3 = document.createElement("h3")
+        details3.innerText = arr[1].name
+
+        var price3 = document.createElement("h4")
+        price3.innerText=arr[1].createdAt
+
+        div3.append(img3,details3,price3,button3)
+
+
+        var button4 = document.createElement("button")
+        button4.innerText="Add To Cart"
+        button4.addEventListener("click",function(){
+            console.log("hello")
+        })
+        
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[4].avatar
+        
+        var details4 = document.createElement("h3")
+        details4.innerText = arr[1].name
+
+        var price4 = document.createElement("h4")
+        price4.innerText=arr[1].createdAt
+
+        div4.append(img4,details4,price4,button4)
+        
+
+
+        var button5 = document.createElement("button")
+        button5.innerText="Add To Cart"
+        button5.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[5].avatar;
+
+        var details5 = document.createElement("h3")
+        details5.innerText = arr[1].name
+
+        var price5 = document.createElement("h4")
+        price5.innerText=arr[1].created
+
+        div5.append(img5,details5,price5,button5)
+
+
+        var pre_button = document.createElement("button")
+        pre_button.innerText = "prev"
+        var c=1
+        pre_button.addEventListener("click",function()
+        {   c-=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==0)
+            {
+                c=arr.length-1
+            }
+        })
+
+       
+        var next_button = document.createElement("button");
+        next_button.innerText = "next"
+
+        next_button.addEventListener("click",function()
+        {   c+=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==arr.length-3)
+            {
+                c=0
+            }
+        })
+
+        document.querySelector("#energy_booster").append(pre_button,div1,div2,div3,div4,div5,next_button)
+
+
+    }
+  
     
-    "https://www.netmeds.com/images/product-v1/150x150/1042880/truuth_adult_diaper_strap_m_1s_476355_0_1.jpg"
-    "https://www.netmeds.com/images/product-v1/150x150/1038910/tynor_life_heating_pad_ortho_mini_1s_394603_0_0.jpg"
-    "https://www.netmeds.com/images/product-v1/150x150/917051/la_shield_lite_spf_30_pa_anti_tanning_sunscreen_gel_30_gm_0_1.jpg"
-    "https://www.netmeds.com/images/product-v1/150x150/413011/pankajakasthuri_orthoherb_tablet_60_s_0.jpg"
-    "https://www.netmeds.com/images/product-v1/150x150/341494/liv_52_tablet_100_s_0.jpg"
-   
+    function brand_days(arr)
+    {
+        var button1 = document.createElement("button")
+        button1.innerText="Add To Cart"
+        button1.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img");
+        img1.src = arr[0].avatar;
+        
+        var details1 = document.createElement("h3")
+        details1.innerText = arr[1].name
+
+        var price1 = document.createElement("h4")
+        price1.innerText=arr[1].createdAt
+
+        div1.append(img1,details1,price1,button1)
+
+
+
+        var button2 = document.createElement("button")
+        button2.innerText="Add To Cart"
+        button2.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div2 = document.createElement("div")
+        var img2 = document.createElement("img");
+        img2.src = arr[1].avatar
+
+        var details2 = document.createElement("h3")
+        details2.innerText = arr[1].name
+
+        var price2 = document.createElement("h4")
+        price2.innerText=arr[1].createdAt
+
+        div2.append(img2,details2,price2,button2)
+        
+
+
+        var button3 = document.createElement("button")
+        button3.innerText="Add To Cart"
+        button3.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[3].avatar
+        
+        var details3 = document.createElement("h3")
+        details3.innerText = arr[1].name
+
+        var price3 = document.createElement("h4")
+        price3.innerText=arr[1].createdAt
+
+        div3.append(img3,details3,price3,button3)
+
+
+        var button4 = document.createElement("button")
+        button4.innerText="Add To Cart"
+        button4.addEventListener("click",function(){
+            console.log("hello")
+        })
+        
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[4].avatar
+        
+        var details4 = document.createElement("h3")
+        details4.innerText = arr[1].name
+
+        var price4 = document.createElement("h4")
+        price4.innerText=arr[1].createdAt
+
+        div4.append(img4,details4,price4,button4)
+        
+
+
+        var button5 = document.createElement("button")
+        button5.innerText="Add To Cart"
+        button5.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[5].avatar;
+
+        var details5 = document.createElement("h3")
+        details5.innerText = arr[1].name
+
+        var price5 = document.createElement("h4")
+        price5.innerText=arr[1].created
+
+        div5.append(img5,details5,price5,button5)
+
+
+        var pre_button = document.createElement("button")
+        pre_button.innerText = "prev"
+        var c=1
+        pre_button.addEventListener("click",function()
+        {   c-=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==0)
+            {
+                c=arr.length-1
+            }
+        })
+
+       
+        var next_button = document.createElement("button");
+        next_button.innerText = "next"
+
+        next_button.addEventListener("click",function()
+        {   c+=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==arr.length-3)
+            {
+                c=0
+            }
+        })
+
+        document.querySelector("#brand_days").append(pre_button,div1,div2,div3,div4,div5,next_button)
+
+
+    }
+  
+    function shop_by_ctegory(arr)
+    {
+        
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img");
+        img1.src = arr[0].avatar;
+        
+        var details1 = document.createElement("h3")
+        details1.innerText = arr[1].name
+
+
+        div1.append(img1,details1)
+
+
+
+       
+        var div2 = document.createElement("div")
+        var img2 = document.createElement("img");
+        img2.src = arr[1].avatar
+
+        var details2 = document.createElement("h3")
+        details2.innerText = arr[1].name
+
+
+        div2.append(img2,details2)
+        
+
+
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[3].avatar
+        
+        var details3 = document.createElement("h3")
+        details3.innerText = arr[1].name
+
+      
+
+        div3.append(img3,details3)
+
+
+      
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[4].avatar
+        
+        var details4 = document.createElement("h3")
+        details4.innerText = arr[1].name
+
+
+        div4.append(img4,details4)
+        
+
+
+        
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[5].avatar;
+
+        var details5 = document.createElement("h3")
+        details5.innerText = arr[1].name
+
+      
+
+        div5.append(img5,details5)
+
+
+
+       
+
+        document.querySelector("#shop_by_ctegory").append(div1,div2,div3,div4,div5)
+
+
+    }
+  
+    function new_on_netmeds(arr)
+{   var count=0
+    trand_interval = setInterval((function(){
+        document.querySelector("#new_on_netmeds").innerHTML=""
+        var div1 = document.createElement("div")
+        var div2 = document.createElement("div")
+        var div3 = document.createElement("div")
+
+        var img1 = document.createElement("img")
+        img1.src = arr[count]
+        div1.append(img1)
+        var img2 = document.createElement("img")
+        img2.src = arr[count+1]
+        div2.append(img2)
+        var img3 = document.createElement("img")
+        img3.src = arr[count+2];
+        div3.append(img3)
+        count+=1;
+        var button1 = document.createElement("button");
+        button1.innerText= "<"
+        button1.addEventListener("click",function(){
+            clearInterval(trand_interval)
+            
+            console.log(count)
+
+            img1.src = arr[count]
+            img2.src = arr[count+1]
+            img3.src = arr[count+2]
+
+            count+=1
+            if(count==arr.length-2)
+        {
+            count=0
+        }
+            
+        })
+        var button2 = document.createElement("button");
+        button2.innerText = ">"
+        document.querySelector("#new_on_netmeds").append(button1,div1,div2,div3,button2)
+        if(count==arr.length-2)
+        {
+            count=0
+        }
+    }),2000)
+        
+        
+    
+}
+    
+    
+function top_brand(arr)
+    {
+        
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img");
+        img1.src = arr[0].avatar;
+        
+        var details1 = document.createElement("h3")
+        details1.innerText = arr[1].name
+
+
+        div1.append(img1,details1)
+
+
+
+       
+        var div2 = document.createElement("div")
+        var img2 = document.createElement("img");
+        img2.src = arr[1].avatar
+
+        var details2 = document.createElement("h3")
+        details2.innerText = arr[1].name
+
+
+        div2.append(img2,details2)
+        
+
+
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[3].avatar
+        
+        var details3 = document.createElement("h3")
+        details3.innerText = arr[1].name
+
+      
+
+        div3.append(img3,details3)
+
+
+      
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[4].avatar
+        
+        var details4 = document.createElement("h3")
+        details4.innerText = arr[1].name
+
+
+        div4.append(img4,details4)
+        
+
+
+        
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[5].avatar;
+
+        var details5 = document.createElement("h3")
+        details5.innerText = arr[1].name
+
+      
+
+        div5.append(img5,details5)
+
+
+
+       
+
+        document.querySelector("#top_brand").append(div1,div2,div3,div4,div5)
+
+
+    }
+  
 </script>
