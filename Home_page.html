@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
         #nav_bar {
             border: 1px solid red;
         }
@@ -59,22 +62,23 @@
         #below_slider{
             
             height: auto;
-            background-color: aqua;
+            /* background-color: aqua; */
             margin: 20px;
         }
        
 
         #below_slider>div:nth-child(1){
             height: 100px;
-            background-color: red;
+            /* background-color: red; */
             margin: 20px;
             display: flex;
             justify-content: space-between;
+            
         }
 
         #below_slider>div:nth-child(2){
             height: 100px;
-            background-color: red;
+            /* background-color: red; */
             margin: 20px;
             display: flex;
             justify-content: space-between;
@@ -82,31 +86,36 @@
 
         #below_slider>div:nth-child(3){
             height: 100px;
-            background-color: red;
+            /* background-color: red; */
             margin: 20px;
             display: flex;
             justify-content: left;
+            
         }
-
+        #below_slider>div:nth-child(1)>div,#below_slider>div:nth-child(3)>div{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
         #below_slider>div:nth-child(3)>div:nth-child(2){margin-left: 20px;
         }
    
        #below_slider>div>div{
-        background-color: yellow;
+        /* background-color: yellow; */
         height: 100px;
         width: 30%;
         display: flex;
+        border-radius: 10px;
+        
        }
        /* Two parts starting here */
 
        #two_parts{
         height: 200px;
-        background-color: red;
+        /* background-color: red; */
         display: flex;
         justify-content: space-around;
        }
        #two_parts>div{
-        background-color: yellow;
+        /* background-color: yellow; */
         height: 100%;
         width: 45%;
        }
@@ -115,15 +124,35 @@
         justify-content: space-between;
         align-items: center;
        }
+       #two_parts>div:nth-child(1)
+       {
+        border-right: 1px solid black;
+       }
+       #view_orders,#explore_beauty{
+        border: 0px;
+        border-radius: 2px;
+        font-size: larger;
+        /* font-weight: bolder; */
+        color: skyblue;
+        background-color: white;
+       }
+       /* tranding section */
 
+       #Tranding_products>button{
+        background-color: white;
+        border: 0px;
+       }
        #tranding_section{
-        background-color: red;
+        /* background-color: red; */
         height: auto;
        }
 
        #Tranding_products{
         display: flex;
         justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        align-content: center;
        }
        #Tranding_products>div{
         width: 30%;    
@@ -137,19 +166,28 @@
         height: 40px;    
     }
     /* tranding section end */
+    /* limited time deal */
     #limited_time{
     height: 400px;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
    }
 
    #limited_time>div{
     width: 18%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
+   }
+   #limited_time>button{
+    height: 5%;
+    background-color: white;
+    border: 0px;
    }
    #limited_time>div>img{
     width: 100%;
@@ -162,7 +200,7 @@
    /* energy booster */
    #energy_booster{
     height: 400px;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -171,14 +209,28 @@
    #energy_booster>div{
     width: 18%;
     height: 100%;
-    background-color: green;
-    
+    /* background-color: green; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: auto;
+    padding-bottom: 10px;
+    text-align: center;
    }
+
+   
+   
    #energy_booster>div>img{
     width: 100%;
    }
 
-   /* energy booster start here */
+   #energy_booster{
+    align-items: center;
+    align-content: center;
+   }
+   #energy_booster>button{
+    height: 5%;
+    background-color: white;
+    border: 0px;
+   }
    #energy_booster_parent{
     padding-left: 50px;
    }
@@ -189,18 +241,27 @@
     justify-content: space-between;
    }
    /* brand days */
+   #brand_days>button{
+    height: 5%;
+    background-color: white;
+    border: 0px;
+   }
    #brand_days{
     height: 400px;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
    }
 
    #brand_days>div{
     width: 18%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
    }
    #brand_days>div>img{
@@ -220,17 +281,18 @@
 
    /*shop_by_ctegory*/
    #shop_by_ctegory{
-    height: 400px;
-    background-color: aqua;
+    height: auto;
+    /* background-color: aqua; */
     margin-top: 10px;
     display: grid;
         grid-template-columns: repeat(5,1fr)
    }
 
    #shop_by_ctegory>div{
-    width: 18%;
-    height: 100%;
-    background-color: green;
+    width: auto;
+    height: auto;
+    /* background-color: green; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
    }
    #shop_by_ctegory>div>img{
@@ -251,13 +313,20 @@
    /* new on netmeds */
 
    #new_on_netmeds_parent{
-        background-color: red;
+        /* background-color: red; */
         height: auto;
        }
+#new_on_netmeds>button{
+    height: 5%;
+    background-color: white;
+    border: 0px;
 
+}
        #new_on_netmeds{
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
        }
        #new_on_netmeds>div{
         width: 30%;    
@@ -274,17 +343,21 @@
     /* top brand */
 
     #top_brand{
-    height: 400px;
-    background-color: aqua;
+    height: auto;
+    /* background-color: aqua; */
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
    }
 
+   
    #top_brand>div{
     width: 18%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    
     
    }
    #top_brand>div>img{
@@ -301,6 +374,93 @@
     display: flex;
     justify-content: space-between;
    }
+
+/* netmed_firset_membership start */
+   #netmed_firset_membership{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+   }
+   #netmed_firset_membership>div{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+
+
+#list{
+    margin-left:30px ;
+}
+
+#netmed_firset_membership>img{
+    border-radius: 10px;
+}
+
+#child2>button{
+    margin-left: 40px;
+    
+    color: white;
+    background-color: skyblue;
+    border: 0px;
+    padding: 15px;
+    border-radius: 2px;
+}
+#child2{
+    color:brown;
+}
+
+/* caterios in focus */
+#categories_in_focus{
+    height: 400px;
+    /* background-color: aqua; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   #categories_in_focus>div{
+    width: 18%;
+    height: 100%;
+    /* background-color: green; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: auto;
+    padding-bottom: 10px;
+    text-align: center;
+   }
+
+   
+   
+   #categories_in_focus>div>img{
+    width: 100%;
+   }
+
+   #categories_in_focus{
+    align-items: center;
+    align-content: center;
+   }
+   #categories_in_focus>button{
+    height: 5%;
+    background-color: white;
+    border: 0px;
+   }
+   #categories_in_focus{
+    padding-left: 50px;
+   }
+  
+   
+   #categories_in_focus_parent>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+   }
+
+   /* explore_beauty */
+   /*  */
 
     </style>
 </head>
@@ -382,16 +542,17 @@
 
    <div id="two_parts">
     <div>
-        <div><h4>Privious Orders</h4>
+        <div><h2>Privious Orders</h2>
         <p>Your previously ordered products</p>
-    <button>View Orders</button></div>
+    <button id="view_orders">View Orders</button>
+</div>
         <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/beauty_products.svg" alt=""></div>
     </div>
     <div>
         <div>
-            <h4>Beauty Products</h4>
+            <h2>Beauty Products</h2>
             <p>Save Upto 40% off</p>
-            <button>Exploer Beauty</button>
+            <button id="explore_beauty">Exploer Beauty</button>
         </div>
         <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/previous_orders.svg" alt=""></div>
     </div>
@@ -446,6 +607,44 @@
 </div>
 
 
+
+<!-- Netmed first membership -->
+
+<div id="netmed_firset_membership">
+    <div>
+        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/netmeds_first_membership.svg" alt="">
+        <div id="list">
+            <h2>Netmed first membership</h2>
+            
+                <li>   Get special discounts and offers on Netmeds services.</li>
+            
+                <li>Get 2.5% NMS Cash on pre-paid, Medicine orders of ANY value!</li>
+            
+        </div>
+    </div>
+    <div id="child2">
+        <h3>Starting at ₹299</h3>
+            <button>Explore now</button>
+    </div>
+</div>
+
+<!--categorys in focus-->
+<div id="categories_in_focus_parent">
+    <div>
+        <h3>Categories In Focus</h3>
+        <h3>View all</h3>
+    </div>   
+    <div id="categories_in_focus"></div>
+</div>
+
+<!-- explore beauty -->
+<div id="explore_beauty_parent">
+    <div>
+        <h3>Explore Beauty</h3>
+        <h3>View all</h3>
+    </div>   
+    <div id="explore_beauty"></div>
+</div>
 
 </body>
 
@@ -588,14 +787,26 @@ var xr =[
     },
     
 ]
+var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netmeds_3_ply_face_mask_with_nose_pin_100s_0_1.jpg",name:"Netmeds 3 Ply Face Mask With Nose Pin 100",price:"220.00"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/1042880/truuth_adult_diaper_strap_m_1s_476355_0_1.jpg",name:"Truuth Adult Diaper - Strap (M) 10",price:"388.85"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/902226/sahyog_wellness_hot_water_bottle_bag_red_0_1.jpg",name:"Sahyog Wellness Hot Water Bottle/Bag ",price:"249.00"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/1038910/tynor_life_heating_pad_ortho_mini_1s_394603_0_0.jpg",name:"Tynor Life Heating Pad Ortho (Mini) ",price:"697.50"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/917051/la_shield_lite_spf_30_pa_anti_tanning_sunscreen_gel_30_gm_0_1.jpg",name:"La Shield Lite SPF 30 & PA+++ Anti-Tanning Sunscreen Gel 30 ",price:"784.00"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/413011/pankajakasthuri_orthoherb_tablet_60_s_0.jpg",name:"Pankajakasthuri Orthoherb Tablet ",price:"246.00"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/341494/liv_52_tablet_100_s_0.jpg",name:"Himalaya Liv.52 Tablet 100'",price:"101.40"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/858143/inlife_omega_3_fish_oil_500_mg_capsules_60s_0_1.jpg",name:"INLIFE Omega 3 Fish Oil 500 Mg Capsules 60",price:"329.34"},
+  {img:"https://www.netmeds.com/images/product-v1/150x150/922461/swisse_ultiboost_odourless_high_strength_wild_fish_oil_1500_mg_capsule_60s_0_0.jpg",name:"Swisse Ultiboost Odourless High Strength Wild Fish Oil 1500 Mg Capsule",price:"639.36"}]
 
    
-    limited_time(xr)
+    limited_time(data)
     energy_booster(xr)
     brand_days(xr)
     shop_by_ctegory(xr)
     new_on_netmeds(trandind_img)
     top_brand(xr)
+    categories_in_focus(xr)
+    explore_beauty(xr)
+    
     function limited_time(arr)
     {
         var button1 = document.createElement("button")
@@ -605,13 +816,13 @@ var xr =[
         })
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
-        img1.src = arr[0].avatar;
+        img1.src = arr[0].img;
         
         var details1 = document.createElement("h3")
-        details1.innerText = arr[1].name
+        details1.innerText = arr[0].name
 
         var price1 = document.createElement("h4")
-        price1.innerText=arr[1].createdAt
+        price1.innerText=arr[0].price
 
         div1.append(img1,details1,price1,button1)
 
@@ -624,13 +835,13 @@ var xr =[
         })
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
-        img2.src = arr[1].avatar
+        img2.src = arr[1].img
 
         var details2 = document.createElement("h3")
         details2.innerText = arr[1].name
 
         var price2 = document.createElement("h4")
-        price2.innerText=arr[1].createdAt
+        price2.innerText=arr[1].price
 
         div2.append(img2,details2,price2,button2)
         
@@ -643,13 +854,13 @@ var xr =[
         })
         var div3 = document.createElement("div")
         var img3 = document.createElement("img");
-        img3.src = arr[3].avatar
+        img3.src = arr[2].img
         
         var details3 = document.createElement("h3")
-        details3.innerText = arr[1].name
+        details3.innerText = arr[2].name
 
         var price3 = document.createElement("h4")
-        price3.innerText=arr[1].createdAt
+        price3.innerText=arr[2].price
 
         div3.append(img3,details3,price3,button3)
 
@@ -662,13 +873,13 @@ var xr =[
         
         var div4 = document.createElement("div")
         var img4 = document.createElement("img");
-        img4.src = arr[4].avatar
+        img4.src = arr[3].img
         
         var details4 = document.createElement("h3")
-        details4.innerText = arr[1].name
+        details4.innerText = arr[3].name
 
         var price4 = document.createElement("h4")
-        price4.innerText=arr[1].createdAt
+        price4.innerText=arr[3].price
 
         div4.append(img4,details4,price4,button4)
         
@@ -681,19 +892,19 @@ var xr =[
         })
         var div5 = document.createElement("div")
         var img5 = document.createElement("img");
-        img5.src = arr[5].avatar;
+        img5.src = arr[4].img;
 
         var details5 = document.createElement("h3")
-        details5.innerText = arr[1].name
+        details5.innerText = arr[4].name
 
         var price5 = document.createElement("h4")
-        price5.innerText=arr[1].created
+        price5.innerText=arr[4].price
 
         div5.append(img5,details5,price5,button5)
 
 
         var pre_button = document.createElement("button")
-        pre_button.innerText = "prev"
+        pre_button.innerText = "<"
         var c=1
         pre_button.addEventListener("click",function()
         {   c-=1;
@@ -710,7 +921,7 @@ var xr =[
 
        
         var next_button = document.createElement("button");
-        next_button.innerText = "next"
+        next_button.innerText = ">"
 
         next_button.addEventListener("click",function()
         {   c+=1;
@@ -827,7 +1038,7 @@ var xr =[
 
 
         var pre_button = document.createElement("button")
-        pre_button.innerText = "prev"
+        pre_button.innerText = "<"
         var c=1
         pre_button.addEventListener("click",function()
         {   c-=1;
@@ -844,7 +1055,7 @@ var xr =[
 
        
         var next_button = document.createElement("button");
-        next_button.innerText = "next"
+        next_button.innerText = ">"
 
         next_button.addEventListener("click",function()
         {   c+=1;
@@ -962,7 +1173,7 @@ var xr =[
 
 
         var pre_button = document.createElement("button")
-        pre_button.innerText = "prev"
+        pre_button.innerText = "<"
         var c=1
         pre_button.addEventListener("click",function()
         {   c-=1;
@@ -979,7 +1190,7 @@ var xr =[
 
        
         var next_button = document.createElement("button");
-        next_button.innerText = "next"
+        next_button.innerText = ">"
 
         next_button.addEventListener("click",function()
         {   c+=1;
@@ -1193,6 +1404,215 @@ function top_brand(arr)
        
 
         document.querySelector("#top_brand").append(div1,div2,div3,div4,div5)
+
+
+    }
+
+function categories_in_focus(arr)
+    {
+        var button1 = document.createElement("button")
+        button1.innerText="Add To Cart"
+        button1.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img");
+        img1.src = arr[0].avatar;
+        
+        var details1 = document.createElement("h3")
+        details1.innerText = arr[1].name
+
+        var price1 = document.createElement("h4")
+        price1.innerText=arr[1].createdAt
+
+        div1.append(img1,details1,price1,button1)
+
+
+
+        var button2 = document.createElement("button")
+        button2.innerText="Add To Cart"
+        button2.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div2 = document.createElement("div")
+        var img2 = document.createElement("img");
+        img2.src = arr[1].avatar
+
+        var details2 = document.createElement("h3")
+        details2.innerText = arr[1].name
+
+        var price2 = document.createElement("h4")
+        price2.innerText=arr[1].createdAt
+
+        div2.append(img2,details2,price2,button2)
+        
+
+
+        var button3 = document.createElement("button")
+        button3.innerText="Add To Cart"
+        button3.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[3].avatar
+        
+        var details3 = document.createElement("h3")
+        details3.innerText = arr[1].name
+
+        var price3 = document.createElement("h4")
+        price3.innerText=arr[1].createdAt
+
+        div3.append(img3,details3,price3,button3)
+
+
+        var button4 = document.createElement("button")
+        button4.innerText="Add To Cart"
+        button4.addEventListener("click",function(){
+            console.log("hello")
+        })
+        
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[4].avatar
+        
+        var details4 = document.createElement("h3")
+        details4.innerText = arr[1].name
+
+        var price4 = document.createElement("h4")
+        price4.innerText=arr[1].createdAt
+
+        div4.append(img4,details4,price4,button4)
+        
+
+
+        var button5 = document.createElement("button")
+        button5.innerText="Add To Cart"
+        button5.addEventListener("click",function(){
+            console.log("hello")
+        })
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[5].avatar;
+
+        var details5 = document.createElement("h3")
+        details5.innerText = arr[1].name
+
+        var price5 = document.createElement("h4")
+        price5.innerText=arr[1].created
+
+        div5.append(img5,details5,price5,button5)
+
+
+        var pre_button = document.createElement("button")
+        pre_button.innerText = "<"
+        var c=1
+        pre_button.addEventListener("click",function()
+        {   c-=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==0)
+            {
+                c=arr.length-1
+            }
+        })
+
+       
+        var next_button = document.createElement("button");
+        next_button.innerText = ">"
+
+        next_button.addEventListener("click",function()
+        {   c+=1;
+            img1.src = arr[0+c].avatar;
+            img2.src = arr[1+c].avatar;
+            img3.src = arr[3+c].avatar;
+            img4.src = arr[4+c].avatar;
+            img5.src = arr[5+c].avatar;
+            if(c==arr.length-3)
+            {
+                c=0
+            }
+        })
+
+        document.querySelector("#categories_in_focus").append(pre_button,div1,div2,div3,div4,div5,next_button)
+
+
+    }
+
+
+    function explore_beauty(arr)
+    {
+        
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img");
+        img1.src = arr[0].avatar;
+        
+        var details1 = document.createElement("h3")
+        details1.innerText = arr[1].name
+
+
+        div1.append(img1,details1)
+
+
+
+       
+        var div2 = document.createElement("div")
+        var img2 = document.createElement("img");
+        img2.src = arr[1].avatar
+
+        var details2 = document.createElement("h3")
+        details2.innerText = arr[1].name
+
+
+        div2.append(img2,details2)
+        
+
+
+        var div3 = document.createElement("div")
+        var img3 = document.createElement("img");
+        img3.src = arr[3].avatar
+        
+        var details3 = document.createElement("h3")
+        details3.innerText = arr[1].name
+
+      
+
+        div3.append(img3,details3)
+
+
+      
+        var div4 = document.createElement("div")
+        var img4 = document.createElement("img");
+        img4.src = arr[4].avatar
+        
+        var details4 = document.createElement("h3")
+        details4.innerText = arr[1].name
+
+
+        div4.append(img4,details4)
+        
+
+
+        
+        var div5 = document.createElement("div")
+        var img5 = document.createElement("img");
+        img5.src = arr[5].avatar;
+
+        var details5 = document.createElement("h3")
+        details5.innerText = arr[1].name
+
+      
+
+        div5.append(img5,details5)
+
+
+
+       
+
+        document.querySelector("#explore_beauty").append(div1,div2,div3,div4,div5)
 
 
     }
