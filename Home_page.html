@@ -556,6 +556,7 @@
         </div>
         <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/previous_orders.svg" alt=""></div>
     </div>
+
    </div>
    <div id="tranding_section">
     <div><h3>Tranding Today</h3></div>
@@ -638,13 +639,7 @@
 </div>
 
 <!-- explore beauty -->
-<div id="explore_beauty_parent">
-    <div>
-        <h3>Explore Beauty</h3>
-        <h3>View all</h3>
-    </div>   
-    <div id="explore_beauty"></div>
-</div>
+
 
 </body>
 
@@ -805,14 +800,18 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
     new_on_netmeds(trandind_img)
     top_brand(xr)
     categories_in_focus(xr)
-    explore_beauty(xr)
     
+    var cart_data = JSON.parse(localStorage.getItem("cart"))||[]
     function limited_time(arr)
-    {
+    { 
         var button1 = document.createElement("button")
         button1.innerText="Add To Cart"
         button1.addEventListener("click",function(){
-            console.log("hello")
+            
+            console.log("cx",arr[0])
+            cart_data.push(arr[0])
+            localStorage.setItem("cart",JSON.stringify(cart_data))
+            
         })
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
@@ -831,7 +830,9 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         var button2 = document.createElement("button")
         button2.innerText="Add To Cart"
         button2.addEventListener("click",function(){
-            console.log("hello")
+            console.log("cx",arr[1])
+            cart_data.push(arr[1])
+            localStorage.setItem("cart",JSON.stringify(cart_data))
         })
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
@@ -850,7 +851,9 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         var button3 = document.createElement("button")
         button3.innerText="Add To Cart"
         button3.addEventListener("click",function(){
-            console.log("hello")
+            console.log("cx",arr[2])
+            cart_data.push(arr[2])
+            localStorage.setItem("cart",JSON.stringify(cart_data))
         })
         var div3 = document.createElement("div")
         var img3 = document.createElement("img");
@@ -868,7 +871,9 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         var button4 = document.createElement("button")
         button4.innerText="Add To Cart"
         button4.addEventListener("click",function(){
-            console.log("hello")
+            console.log("cx",arr[3])
+            cart_data.push(arr[3])
+            localStorage.setItem("cart",JSON.stringify(cart_data))
         })
         
         var div4 = document.createElement("div")
@@ -888,7 +893,9 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         var button5 = document.createElement("button")
         button5.innerText="Add To Cart"
         button5.addEventListener("click",function(){
-            console.log("hello")
+            console.log("cx",arr[4])
+            cart_data.push(arr[4])
+            localStorage.setItem("cart",JSON.stringify(cart_data))
         })
         var div5 = document.createElement("div")
         var img5 = document.createElement("img");
@@ -1543,78 +1550,8 @@ function categories_in_focus(arr)
     }
 
 
-    function explore_beauty(arr)
-    {
-        
-        var div1 = document.createElement("div")
-        var img1 = document.createElement("img");
-        img1.src = arr[0].avatar;
-        
-        var details1 = document.createElement("h3")
-        details1.innerText = arr[1].name
+ 
 
-
-        div1.append(img1,details1)
-
-
-
-       
-        var div2 = document.createElement("div")
-        var img2 = document.createElement("img");
-        img2.src = arr[1].avatar
-
-        var details2 = document.createElement("h3")
-        details2.innerText = arr[1].name
-
-
-        div2.append(img2,details2)
-        
-
-
-        var div3 = document.createElement("div")
-        var img3 = document.createElement("img");
-        img3.src = arr[3].avatar
-        
-        var details3 = document.createElement("h3")
-        details3.innerText = arr[1].name
-
-      
-
-        div3.append(img3,details3)
-
-
-      
-        var div4 = document.createElement("div")
-        var img4 = document.createElement("img");
-        img4.src = arr[4].avatar
-        
-        var details4 = document.createElement("h3")
-        details4.innerText = arr[1].name
-
-
-        div4.append(img4,details4)
-        
-
-
-        
-        var div5 = document.createElement("div")
-        var img5 = document.createElement("img");
-        img5.src = arr[5].avatar;
-
-        var details5 = document.createElement("h3")
-        details5.innerText = arr[1].name
-
-      
-
-        div5.append(img5,details5)
-
-
-
-       
-
-        document.querySelector("#explore_beauty").append(div1,div2,div3,div4,div5)
-
-
-    }
+    
   
 </script>
