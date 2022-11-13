@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay</title>
+    <style>    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+            background-color: skyblue;
+            color: black;
+            border: 10px;
+            border: 0px;
+            height: 50px;
+        }
+    #nav_bar{
+        background-color: skyblue;
+        color:skyblue;
+    }
+#nav_bar>div {
+    /* border: 1px solid black; */
+
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#nav_bar>div:nth-child(1)>img {
+        width: 10%;
+        /* background-color: rgb(235, 135, 197) */
+    }
+    
+#search{
+    height: 50px;
+    width: 80%;
+    background-color:skyblue;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 10px;
+    
+    color:skyblue;
+    padding-left:2% ;
+    
+}
+#search>input{
+    height: 35px;
+    width: 77%;
+    border: 0px;
+   
+    padding-left: 2%;
+    font-size: large;
+    background-color: skyblue;
+    color:skyblue
+}
+#search>div{
+    display: inline;
+}
+#select{
+    border: 0px;
+    background-color:skyblue;
+}
+span{
+    color:skyblue;
+}
+/* ci=ontainer */
+
+#container{
+    width: 75%;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    
+    padding-top: 3%;
+}
+#container>div{
+    width: 70%;
+    height: auto;
+    /* border: 1px solid black;  */
+}
+#container>div:nth-child(1){
+    width: 150% ;
+    
+}
+/* slider */
+
+
+    #created_div{
+        border-bottom: 1px solid black;
+        margin: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    /* svae for latter */
+    #new{
+     width: 100%;
+     display: flex;
+     
+     justify-content: space-between;  
+     padding-bottom: 20px; 
+     
+     /* background-color: aqua; */
+    }
+    #remove{
+        margin-right: 20px;
+
+    }
+    /* right side */
+    /* #container>div:nth-child(2)
+    {  
+        background-color: aqua;
+    } */
+
+    #apply_promo>div{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    #payment_details{
+        
+        /* background-color:rebeccapurple; */
+        margin-top: 20px;
+    }
+
+    .mrp{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: larger;
+    }
+
+    #proceed_parent{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .remove_save{
+        background-color:yellow;
+        border-radius: 2px;
+       height: 40px;
+    }
+    #remove{
+        width: 100px;
+    }
+    #save_for_latter{
+        padding: 10px;
+    }
+   #add_iteams{
+    
+    font-size: larger;
+    font-weight: bolder;
+    padding-bottom: 10px;
+   }
+
+   #add_iteams>input{
+    height: 200px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 20px;
+   }
+   #apply_promo_parent{
+    margin-top: 0px;
+   }
+   /* new css */
+#cont>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top:10px ;
+    
+   
+}
+.g-pay{
+    display: flex;
+    margin-top: 20px;
+    align-content: center;
+    align-items: center;
+}
+.g-pay>img{
+    width: 50px;
+    margin-right: 30px;
+}
+
+.g-pay>input{
+    margin-left: 500px;
+}
+
+/* banking  */
+#banking_img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#more_banks{
+    width: 40%;
+    margin: auto;
+    height: 30px;
+    
+    font-size: larger;
+    margin-top: 10px;
+}
+
+/* credit card */
+#credit_card>h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+#credit_card>h1{
+   display: inline;
+   color:skyblue;
+   margin-left: 40%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-size: medium;
+   margin-top: 20px;
+   
+}
+#total_savings{
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#enter_otp{
+    height: 50px;
+    width: 20%;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#done{
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+</style>
+</head>
+<body>
+
+    <div id="nav_bar">
+        <div>
+            <img src="file:///C:/Users/pcs/Downloads/netmeds.png" alt="">
+            <div id="search">
+                <div></div>
+                <input type="text" name="searchBar" id="searchBar" >
+            </div>
+            <h3></h3>
+            <h3><a href="C:\Users\pcs\Desktop\earsplitting-growth-3609\Home_page.html"></a></h3>
+        </div>    
+    </div>
+    
+
+    <div  id="container">
+        <div>
+            <div id="slider">
+
+            </div>
+            <div id="products">Producs</div>
+            <div id="cont">
+                
+                <div id="voucher">
+                    <input type="checkbox" name="" id="">
+                    <h2>vouchers</h2>
+                </div>
+                <div>
+                    <h2>upi</h2>
+                    <div class="g-pay">
+                        <img src="https://www.netmeds.com/assets/pgicon/googlepaylogo.png" alt="">
+                        <h3>G-pay</h3>
+                        <input type="radio" name="" class="gpay_click" id="google_pay">
+                    </div>
+                </div>
+                <div>
+                    <h2>net banking</h2>
+                    <div id="banking_img">
+                        <img src="https://www.netmeds.com/assets/pgicon/axis.png" alt="">
+                        <img src="https://www.netmeds.com/assets/pgicon/Hdfc.png" alt="">
+                        <img src="https://www.netmeds.com/assets/pgicon/icici.png" alt="">
+                        <img src="https://www.netmeds.com/assets/pgicon/kotak.png" alt="">
+                        <img src="https://www.netmeds.com/assets/pgicon/Sbi.png" alt=""><img src="" alt="">
+                    </div>
+                    <select name="more_banks" id="more_banks">
+                        <option value="Axis">Axis</option>
+                        <option value="au">Au</option>
+                        <option value="bajaj">Bajaj</option>
+                    </select>
+                </div>
+                <div id="credit_card">
+                    <h2>CREDIT & DEBIT CARDS</h2>
+                    <hr>
+                    <h1>Add New Card</h1>
+                </div>
+                <div>
+                    <div class="g-pay">
+                        <img src="https://www.netmeds.com/assets/pgicon/Paytm_lo.png" alt="">
+                        <h3>Paytm</h3>
+                        <input type="radio" name="" class="gpay_click">
+                    </div>
+                </div>
+                <div> <div class="g-pay">
+                    <img src="https://www.netmeds.com/assets/pgicon/Phone_Pay_lo.png" alt="">
+                    <h3>PhonePay</h3>
+                    <input type="radio" name="" class="gpay_click">
+                </div></div>
+                <div> <div class="g-pay">
+                    <img src="https://www.netmeds.com/assets/pgicon/COD.png" alt="">
+                    <h3>Cash on Delivery</h3>
+                    <input type="radio" name="" class="gpay_click">
+                </div></div>
+            </div>
+           
+        </div>
+        <!-- <div id="apply_promo_parent">
+            <div id="apply_promo">
+                <h5></h5>
+                <div>
+                <input type="radio" name="" id="radio">
+                <h4></h4>
+                <select name="" id=""></select>
+                
+            </div>
+            <p>Get flat discount! Vouchers applicable in <br> payment options.</p>
+            </div> -->
+            <div id="payment_details">
+                <h3>payment details</h3>
+                <div class="mrp">
+                    <h5>MRP Total</h5>
+                    <h5 id="MRP_Total">0</h5>
+                </div>
+                <div class="mrp">
+                    <h5>Netmeds_Discount</h5>
+                    <h5 id="Netmeds_Discount">0</h5>
+                </div>
+                <div class="mrp">
+                    <h5>Total Amount</h5>
+                    <h5 id="Total_Amount">0</h5>
+                </div>
+                <button id="total_savings">Total Savings</button>
+
+                <!-- <div id="proceed_parent">
+                    <div>
+                        <h5>Total amount</h5>
+                        <h6 id="proceed_payment">0</h6>
+                    </div>
+                    <div><button id="proceed_payment_button"><a href="C:\Users\pcs\Desktop\earsplitting-growth-3609\pay.html">Pay</a></button></div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<script>
+    var data = JSON.parse(localStorage.getItem("bill"))
+    console.log(data.discount)
+    var savings = document.querySelector("#Total_Amount")
+    savings.innerText = data.finally
+
+    var discount = document.querySelector("#Netmeds_Discount")
+    discount.innerText=data.discount
+
+
+    var price = document.querySelector("#MRP_Total")
+    price.innerText = data.price
+
+
+    var total_savings = document.querySelector("#total_savings")
+    total_savings.innerText=data.discount
+
+
+    // payment;
+
+    var google_pay = document.querySelector("#google_pay")
+    google_pay.addEventListener("change",function(){
+        let otp_page = document.createElement("div");
+
+        let enter_otp = document.createElement("input");
+
+        enter_otp.setAttribute("id","enter_otp")
+        enter_otp.placeholder = "enter otp here"
+        let done = document.createElement("button")
+        done.innerText="done"
+        done.setAttribute("id","done")
+
+        otp_page.append(enter_otp,done)
+        document.querySelector("#payment_details").append(otp_page)
+
+        done.addEventListener("click",function(){
+            if(enter_otp.value=="1234")
+            {
+                alert("payment successful")
+            }
+            else{
+                alert("OTP not valid")
+            }
+        })
+        
+        
+    })
+</script>
