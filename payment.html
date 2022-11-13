@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>  *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+            background-color: skyblue;
+            color: black;
+            border: 10px;
+            border: 0px;
+            height: 50px;
+        }
+    #nav_bar{
+        background-color: skyblue;
+        color: white;
+    }
+#nav_bar>div {
+    /* border: 1px solid black; */
+
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#nav_bar>div:nth-child(1)>img {
+        width: 10%;
+        background-color: rgb(235, 135, 197)
+    }
+    
+#search{
+    height: 50px;
+    width: 70%;
+    background-color:white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: gray;
+    padding-left:2% ;
+    
+}
+#search>input{
+    height: 35px;
+    width: 77%;
+    border: 0px;
+    border-left: 1px solid black;
+    padding-left: 2%;
+    font-size: large;
+    
+    color: rgb(1, 1, 14);
+}
+#search>div{
+    display: inline;
+}
+#select{
+    border: 0px;
+}
+span{
+    color: olivedrab;
+}
+/* ci=ontainer */
+
+#container{
+    width: 75%;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    
+    padding-top: 3%;
+}
+#container>div{
+    width: 70%;
+    height: auto;
+    /* border: 1px solid black;  */
+}
+#container>div:nth-child(1){
+    width: 150% ;
+    
+}
+/* slider */
+
+
+    #created_div{
+        border-bottom: 1px solid black;
+        margin: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    /* svae for latter */
+    #new{
+     width: 100%;
+     display: flex;
+     
+     justify-content: space-between;  
+     padding-bottom: 20px; 
+     
+     /* background-color: aqua; */
+    }
+    #remove{
+        margin-right: 20px;
+
+    }
+    /* right side */
+    /* #container>div:nth-child(2)
+    {  
+        background-color: aqua;
+    } */
+
+    #apply_promo>div{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    #payment_details{
+        
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-top: 20px;
+    }
+
+    .mrp{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: larger;
+    }
+
+    #proceed_parent{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .remove_save{
+        background-color:yellow;
+        border-radius: 2px;
+       height: 40px;
+    }
+    #remove{
+        width: 100px;
+    }
+    #save_for_latter{
+        padding: 10px;
+    }
+   #add_iteams{
+    
+    font-size: larger;
+    font-weight: bolder;
+    padding-bottom: 10px;
+   }
+
+   #add_iteams>input{
+    height: 200px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 20px;
+   }
+   #apply_promo_parent{
+    margin-top: 0px;
+   }
+   /* Adress input */
+
+a{
+    color: white;
+    text-decoration: none;
+}
+   
+   </style>
+</head>
+<body>
+    <div id="nav_bar">
+        <div>
+            <img src="file:///C:/Users/pcs/Downloads/netmeds.png" alt="">
+            <div id="search">
+                <div>Delever to <span>113002</span><select name="" id="select"></select></div>
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search for medicine or wellness products...">
+            </div>
+            <h3>Upload</h3>
+            <h3><a href="C:\Users\pcs\Desktop\earsplitting-growth-3609\Home_page.html">Home</a></h3>
+        </div>    
+    </div>
+    
+        
+        
+        <!-- container -->
+
+
+        <div  id="container">
+            <div>
+                <div id="slider">
+    
+                </div>
+                <div id="products">Producs</div>
+                <div id="cont"></div>
+                <div id="add_iteams">
+                    <h4>coustmer Notes</h4>
+                    <input type="text" name="" id="">
+
+                </div>
+            </div>
+            <div id="apply_promo_parent">
+                <div id="apply_promo">
+                    <h5>APPLY PROMOCODE / NMS SUPERCASH</h5>
+                    <div>
+                    <input type="radio" name="" id="radio">
+                    <h4>Apply PROMOCODE</h4>
+                    <select name="" id=""></select>
+                    
+                </div>
+                <p>Get flat discount! Vouchers applicable in <br> payment options.</p>
+                </div>
+                <div id="payment_details">
+                    <h3>payment details</h3>
+                    <div class="mrp">
+                        <h5>MRP Total</h5>
+                        <h5 id="MRP_Total">0</h5>
+                    </div>
+                    <div class="mrp">
+                        <h5>Netmeds_Discount</h5>
+                        <h5 id="Netmeds_Discount">0</h5>
+                    </div>
+                    <div class="mrp">
+                        <h5>Total Amount</h5>
+                        <h5 id="Total_Amount">0</h5>
+                    </div>
+                    <button>payment details</button>
+    
+                    <div id="proceed_parent">
+                        <div>
+                            <h5>Total amount</h5>
+                            <h6 id="proceed_payment">0</h6>
+                        </div>
+                        <div><button id="proceed_payment_button"><a href="C:\Users\pcs\Desktop\earsplitting-growth-3609\pay.html">Pay</a></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
+
+<script>
+    
+    var data = JSON.parse(localStorage.getItem("cart"));
+    console.log(data)
+display(data)
+
+    function display(data){
+        document.querySelector("#cont").innerHTML=""
+        let calculate_amount = 0
+        // console.log(calculate_amount)
+        data.forEach((ele,index) => {
+
+            var div = document.createElement("div");
+            div.setAttribute("id","created_div")
+            var photo = document.createElement("img")
+            photo.src = ele.img
+
+            var name = document.createElement("h3")
+            name.innerText=ele.name
+
+            var price = document.createElement("h4")
+            price.innerText = ele.price;
+
+            var date = document.createElement("p")
+            date.innerText="Delivery between NOVEMBER 14-NOVEMBER 15"
+            
+            var d = document.createElement("div")
+            d.setAttribute("id","d")
+
+
+            var dic_co = document.createElement("div")
+            dic_co.setAttribute("id","new")
+
+
+            // remove button
+            var remove = document.createElement("button")
+            remove.innerText="remove"
+            remove.setAttribute("id","remove")
+            remove.addEventListener("click",function(){
+                delData(data,index)
+            })
+
+            var save_for_latter = document.createElement("button")
+            save_for_latter.innerText="save for latter"
+            save_for_latter.setAttribute("id","save_for_latter")
+            d.append(remove,save_for_latter)
+            dic_co.append(date,d)
+
+            div.append(photo,name,price,dic_co);
+            document.querySelector("#cont").append(div)
+
+
+            // payment
+            calculate_amount+=+(ele.price);
+            console.log(calculate_amount)
+            // MRP_Total
+            let MRP_Total = document.querySelector("#MRP_Total")
+            MRP_Total.innerText = calculate_amount;
+
+            // Netmeds_Discount
+
+            let Netmeds_Discount = document.querySelector("#Netmeds_Discount")
+            let calculate_discount = calculate_amount*0.11;
+            Netmeds_Discount.innerText = calculate_discount
+
+
+            let Total_Amount = document.querySelector("#Total_Amount")
+            let calculate_amount_total = calculate_amount*0.9;
+            Total_Amount.innerText = calculate_amount_total
+
+
+            // proceed_payment
+
+            let proceed_payment = document.querySelector("#proceed_payment");
+            proceed_payment.innerText=calculate_amount_total
+             
+            let obj = {price:calculate_amount,discount:calculate_discount,finally:calculate_amount_total}
+            console.log(obj)
+            localStorage.setItem("bill",JSON.stringify(obj))
+    }) 
+}    
+ 
+
+function delData(arr,index){
+    arr.splice(index,1)
+    localStorage.setItem("cart",JSON.stringify(arr))
+    display(arr)
+}
+</script>

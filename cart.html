@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cart</title>
     <style>
          *{
             margin: 0px;
             padding: 0px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        button{
+            background-color: skyblue;
+            color: black;
+            border: 10px;
+            border: 0px;
+            height: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
         }
         #nav_bar{
             background-color: skyblue;
@@ -30,7 +41,7 @@
         
     #search{
         height: 50px;
-        width: 80%;
+        width: 70%;
         background-color:white;
         align-items: center;
         align-content: center;
@@ -88,17 +99,17 @@
     
     #slider {
             margin-top: 2%;
-            border: 1px solid green;
+            /* border: 1px solid green; */
             position: relative;
         }
         #slider>img{
-            background-color: aqua;
+            /* background-color: aqua; */
             width: 100%;
         }
         #created_div{
             border-bottom: 1px solid black;
             margin: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
             margin-top: 10px;
             padding-bottom: 10px;
 
@@ -132,7 +143,7 @@
 
         #payment_details{
             
-            background-color: aqua;
+            /* background-color: aqua; */
             margin-top: 20px;
         }
 
@@ -191,7 +202,7 @@
             <div id="slider">
 
             </div>
-            <div id="products">Producs</div>
+            <div id="products">Products</div>
             <div id="cont"></div>
             <div id="add_iteams">
                 <div>Add more items</div>
@@ -212,25 +223,25 @@
             <div id="payment_details">
                 <h3>payment details</h3>
                 <div class="mrp">
-                    <h5>mrp</h5>
-                    <h5 id="mrp_rs">200</h5>
+                    <h5>MRP Total</h5>
+                    <h5 id="MRP_Total">0</h5>
                 </div>
                 <div class="mrp">
-                    <h5>mrp</h5>
-                    <h5 id="dis">200</h5>
+                    <h5>Netmeds_Discount</h5>
+                    <h5 id="Netmeds_Discount">0</h5>
                 </div>
                 <div class="mrp">
-                    <h5>mrp</h5>
-                    <h5 id="dis_price">200</h5>
+                    <h5>Total Amount</h5>
+                    <h5 id="Total_Amount">0</h5>
                 </div>
                 <button>payment details</button>
 
                 <div id="proceed_parent">
                     <div>
                         <h5>Total amount</h5>
-                        <h6>500</h6>
+                        <h6 id="proceed_payment">0</h6>
                     </div>
-                    <div><button>Proceed</button></div>
+                    <div><button id="proceed_payment_button"><a href="C:\Users\pcs\Desktop\earsplitting-growth-3609\payment.html">proceed payment</a></button></div>
                 </div>
             </div>
         </div>
@@ -245,7 +256,7 @@ let slider_img_arr = ["https://www.netmeds.com/images/cms/aw_rbslider/slides/166
 
     let slider = document.querySelector("#slider")
 
-    var count = 0;
+    let count = 0;
     var slide = setInterval(() => {
             slider.innerHTML=""
         if (count == 2) {
@@ -270,10 +281,13 @@ let slider_img_arr = ["https://www.netmeds.com/images/cms/aw_rbslider/slides/166
     var data = JSON.parse(localStorage.getItem("cart"));
     console.log(data)
 display(data)
-var count=0;
+
     function display(data){
         document.querySelector("#cont").innerHTML=""
+        let calculate_amount = 0
+        // console.log(calculate_amount)
         data.forEach((ele,index) => {
+
             var div = document.createElement("div");
             div.setAttribute("id","created_div")
             var photo = document.createElement("img")
@@ -290,15 +304,18 @@ var count=0;
             
             var d = document.createElement("div")
             d.setAttribute("id","d")
-console.log(date)
+
 
             var dic_co = document.createElement("div")
             dic_co.setAttribute("id","new")
+
+
+            // remove button
             var remove = document.createElement("button")
             remove.innerText="remove"
             remove.setAttribute("id","remove")
             remove.addEventListener("click",function(){
-                delData(date,index)
+                delData(data,index)
             })
 
             var save_for_latter = document.createElement("button")
@@ -310,40 +327,43 @@ console.log(date)
             div.append(photo,name,price,dic_co);
             document.querySelector("#cont").append(div)
 
-            save_for_latter.setAttribute("class","remove_save");
-            remove.setAttribute("class","remove_save")
 
-            
-            count+=+(price.innerText);
-            console.log(count)
-            document.querySelector("#mrp_rs").innerText=count
+            // payment
+            calculate_amount+=+(ele.price);
+            console.log(calculate_amount)
+            // MRP_Total
+            let MRP_Total = document.querySelector("#MRP_Total")
+            MRP_Total.innerText = calculate_amount;
 
-            var dis = document.querySelector("#radio")
-            dis.addEventListener("click",function () {
-                m(count)
-            })
-        });
-    }
+            // Netmeds_Discount
 
-    function m(count){
-        console.log(count)
-                var x = count*0.2;
-                document.querySelector("#dis").innerText=x;
-                var y = count+8;
-                document.querySelector("#dis_price").innerText=y
+            let Netmeds_Discount = document.querySelector("#Netmeds_Discount")
+            let calculate_discount = calculate_amount*0.11;
+            Netmeds_Discount.innerText = calculate_discount
 
-    }
 
-    function delData(arr,index)
-    {
-        var a = [1,2,3,4,5]
-    a.splice(2,1)
-    console.log(a)
-        arr.splice(index,1);
-        localStorage.setItem("cart",JSON.stringify(arr))
-        display(arr)
-    }
+            let Total_Amount = document.querySelector("#Total_Amount")
+            let calculate_amount_total = calculate_amount*0.9;
+            Total_Amount.innerText = calculate_amount_total
 
+
+            // proceed_payment
+
+            let proceed_payment = document.querySelector("#proceed_payment");
+            proceed_payment.innerText=calculate_amount_total
+
+    }) 
+}    
+ 
+
+function delData(arr,index){
+    arr.splice(index,1)
+    localStorage.setItem("cart",JSON.stringify(arr))
+    display(arr)
+}
+
+
+    
     
 
 

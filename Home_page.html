@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>home page</title>
     <style>
         *{
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
         #nav_bar {
-            border: 1px solid red;
+            /* border: 1px solid red; */
+            background-color: skyblue;
+            color: white;
+            text-decoration: none;
         }
 
         #nav_bar>div {
-            border: 1px solid black;
+            /* border: 1px solid black; */
 
             margin: 20px;
             display: flex;
@@ -46,16 +54,59 @@
             font-size: small;
             font-weight: bolder;
         }
-
+        #na{
+            background-color: aliceblue;
+            /* width: 100%; */
+            /* margin-right: -50px; */
+            color: skyblue;
+        }
 
         #nav_bar>div:nth-child(2)>img {
             width: 3%;
         }
+        #search{
+        height: 50px;
+        width: 60%;
+        background-color:white;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-top: 1%;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        color: gray;
+        padding-left:2% ;
+        
+    }
+    #search>input{
+        height: 35px;
+        width: 77%;
+        border: 0px;
+        border-left: 1px solid black;
+        padding-left: 2%;
+        font-size: large;
+        
+        color: rgb(1, 1, 14);
+    }
+    #search>div{
+        display: inline;
+    }
+    #select{
+        border: 0px;
+    }
+    span{
+        color: skyblue;
+    }
+
 
         #slider {
             margin-top: 2%;
-            border: 1px solid green;
+            /* border: 1px solid green; */
+            width: 100%;
             position: relative;
+        }
+        #slider>img{
+            width: 100%;
         }
 
        
@@ -97,7 +148,7 @@
         }
         #below_slider>div:nth-child(3)>div:nth-child(2){margin-left: 20px;
         }
-   
+        
        #below_slider>div>div{
         /* background-color: yellow; */
         height: 100px;
@@ -459,9 +510,54 @@
     justify-content: space-between;
    }
 
-   /* explore_beauty */
-   /*  */
+#pera{
+    border-top: 1px solid black;
+    padding-top: 5px;
+    margin-top: 50px;
+}
 
+#below_pera{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: large;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#below_pera>div>img{
+    width: 30%;
+}
+
+
+#footer{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#footer_email{
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttons>div>img{
+    width: 50%;
+    margin-top: 50px;
+}
+
+
+#final{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 190px;
+}
     </style>
 </head>
 
@@ -469,10 +565,13 @@
     <div id="nav_bar">
         <div>
             <img src="file:///C:/Users/pcs/Downloads/netmeds.png" alt="">
-            <input type="text" name="" id="search_bar" placeholder="search for medicine and wellness products">
+            <div id="search">
+                <div>Delever to <span>113002</span><select name="" id="select"></select></div>
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search for medicine or wellness products...">
+            </div>
             <h3>Upload</h3>
-            <h3>cart</h3>
-            <h3 id="singin"> <a href="C:\Users\pcs\Desktop\project\singin.html"> singin/singup</a></h3>
+            <a href="C:\Users\pcs\Desktop\earsplitting-growth-3609\cart.html"><h3>cart</h3></a>
+            <h3 id="singin"> <a href="">swapnil</a></h3>
 
         </div>
         <div>
@@ -493,7 +592,7 @@
             <h3>Health Corner</h3>
 
         </div>
-        <div>
+        <div id="na">
             <h3>COVID Essentials</h3>
             <h3>Diabetes</h3>
             <h3>Eyewear</h3>
@@ -518,13 +617,13 @@
         <p>save upto 50%</p></div>
 
        </div>
-       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg" alt="" class="x">
         <div>
             <h3>our medicine </h3>
             <p>save upto 50%</p>
         </div>
     </div>
-       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg" alt="" class="x">
     <div><h3>our medicine</h3><p>save upto 50%</p></div>
     </div>
     </div>
@@ -534,8 +633,8 @@
       
     </div>
     <div>
-        <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt=""><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi iure, sequi earum nesciunt velit?</p></div>
-       <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsam, quos aliquid qui odit facere.</div>
+        <div><img src="https://www.netmeds.com/images/cms/offers/1657030565_Simpl_Icon.png" alt="" class="x"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi iure, sequi earum nesciunt velit?</p></div>
+       <div><img src="https://www.netmeds.com/images/cms/offers/1654235738_Icon_256x256.png" alt="" class="x">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsam, quos aliquid qui odit facere.</div>
        
     </div>
    </div>
@@ -597,7 +696,7 @@
 <div id="new_on_netmeds_parent">
     <div><h3>New On Netmeds</h3></div>
     <div id="new_on_netmeds"></div>
-   </div>
+</div>
 
    <div id="top_brand_parent">
     <div>
@@ -605,7 +704,7 @@
         <h3>View all</h3>
     </div>   
     <div id="top_brand"></div>
-</div>
+    </div>
 
 
 
@@ -637,10 +736,92 @@
     </div>   
     <div id="categories_in_focus"></div>
 </div>
+<div id="pera">
+<p><strong> Popular Wellness Products:</strong> Dabur Shilajit Gold Capsule 20's | Dabur Chyawanprash Awaleha 500 gm | Pankajakasthuri Breathe Easy Granules 400 gm | Nestle Peptamen Peptide Based Diet Powder - Vanilla Flavour 400 gm (Tin) | Pentasure 2.0 Vanilla Powder 1 kg | Scalpe Plus Anti Dandruff Shampoo 75 ml | Nestle Nan Excella Pro 1 (Upto 6 Months) Powder 400 gm (Refill Pack) | Accu-Chek Active Test Strips 50's | D Protin Chocolate Powder 500 gm | Climax Spray for Men 12 gm
+    Top-Selling Health Packages: AAROGYAM C | Netmed Health Pack | Aarogyam 1.3 | Netmeds Swasthya | Diabetic Checkup | Aarogyam 1.7 | Basic Allergy Package | Aarogyam X | Advance Heart Care | Netmeds Swasthya Plus
+    Top-Selling Lab Tests: Complete Blood Count (CBC)/Complete Hemogram | LIVER FUNCTION TEST | Blood Glucose Fasting (FBS) | THYROID PROFILE -TOTAL(T3,T4&TSH) | Fever Profile | Urine Routine & Microscopy | Hemoglobin A1C (HbA1c) | 25-OH Vitamin D (TOTAL)/Vitamin D Total 25 Hydroxy | Uric Acid | Maternal screen-1st Trimester Dual Marker test
+    Top-Selling Radiology Tests: Ultrasound Whole Abdomen | MRI Scan Brain | CT Scan Brain | ECHO | X Ray Chest PA View | PET Scan | ECG | Ultrasound Pelvis | 3T MRI Scan Brain | CT Scan Chest
+    Most Viewed Health Articles:Chandraprabha Vati - Uses, Functions And Therapeutic Benefits | Amla: Benefits, Uses For Hair and Health Conditions, Supplements And Recipes | Amazing Benefits Of Chyawanprash For Bolstering Immunity And Vitality | Arogyavardhini Vati - Uses, Functions And Therapeutic Benefits | Amazing Benefits Of Betel Leaves Nobody Told You</p>
 
-<!-- explore beauty -->
+<h3>Welcome to Netmeds.com! India's Leading Online Pharmacy!</h3>
 
+<p>With a dynamic legacy of over 100 years in the pharma business, it comes as no surprise that Netmeds.com is the first choice of over 4 million+ satisfied customers when it comes to an online pharmacy in India. Netmeds.com has a pan India presence as we deliver health care essentials to every state in the country. We take your health seriously at Netmeds.com. Be it purchasing medicines online, lab tests or online doctor consultations, we've got it all covered for our customers!</p>
 
+<h3>Take the Worry Out of Buying Medicines! Purchase Medicines Online Anytime, Anywhere!</h3>
+<p>Get everything you need at Netmeds.com to take care of your health right from high-quality, affordable, authentic prescription medicines, Over-The-Counter pharmaceuticals products to general health care products, Ayurveda, Unani and Homeopathy medicines.
+
+    Buy medicines online at Netmeds.com from the comfort of your home and we will take care of the rest! We will ensure that the life-saving drugs reach your doorstep without a hitch. Do away with the hassle of driving to the medical store, waiting in line, or even remembering your refills! Netmed.com will sort out those problems for you effectively so that you can lead a healthy and full life!
+    
+    Ordering medicines online at Netmeds.com is just a simple 4 step process. Browse through our wide range of health care products, add them to your cart, uploading your prescription (if required) and proceed to checkout!
+    
+    With Netmed.com, rest assured that your health will be in safe hands!</p>
+<h3>Buying medicines online</h3>
+
+<p>At Netmeds.com, we ensure that you get high-quality life-saving medicines are delivered to you on time. Order medicines online at your convenience from across the country. We also deliver Ayurvedic, Homeopathic, Unani and Over-The-Counter (OTC) products to over 19,000 pin codes across the country</p>
+<h3>Medicine Subscription</h3>
+<p>Remembering to refilling medicines month on month to address chronic conditions can be a hassle. Netmeds' subscription service will ensure that you never run out of these vital medicines. Just set it up and your medicines will get refilled and delivered automatically every month to your doorstep!</p>
+</div>
+<div id="below_pera">
+    <div>
+    <img src="file:///C:/Users/pcs/Downloads/netmeds.png" alt="">
+</div>
+<div>
+    Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices tobr <br> over 7 million happy customers – PAN India.
+</div>
+</div>
+
+<div id="footer">
+    <div>
+        <h3>COMPANY</h3>
+        <h5>About Netmeds</h5>
+        <h5>Customers Speak</h5>
+        <h5>In the News</h5>
+        <h5>Career</h5>
+        <h5>Terms and Conditions</h5>
+        <h5>Privacy Policy</h5>
+        <h5>Fees and Payments Policy</h5>
+        <h5>Shipping and Delivery Policy</h5>
+        <h5>Return, Refund and Cancellation Policy</h5>
+        <h5>Contact</h5>
+    </div>
+    <div>
+        <h3>SHOPPING</h3>
+        <h5>Browse by A-Z</h5>
+        <h5>Browse by Manufacturers
+        </h5>
+        <h5>Health Articles</h5>
+        <h5>Offers / Coupons</h5>
+        <h5>FAQs</h5>
+        <h5></h5>
+    </div>
+    <div>
+        <h3>SOCIAL</h3>
+        <h5>Patients Alike</h5>
+        <h5>Facebook</h5>
+        <h5>Twitter</h5>
+        <h5>LinkedIn</h5>
+        <h5>Youtube</h5>
+        <h5>Refer & Earn</h5>
+    </div>
+    <div>
+        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+        <h5>Get a free subscription to our health and <br> fitness tip and stay tuned to our latest offers
+        </h5>
+        <input type="text" name="" id="footer_email" placeholder="Enter your email address">
+        <div id="buttons">
+            <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt=""></div>
+            <div><img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt=""></div>
+        </div>
+    </div>
+    <br>
+    
+</div>
+<div id="final">
+    <h3>Medicine</h3>
+    <h3>Wellness</h3>
+    <h3>LabTests</h3>
+    <h3>Beauty</h3>
+</div>
 </body>
 
 </html>
@@ -791,16 +972,20 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
   {img:"https://www.netmeds.com/images/product-v1/150x150/341494/liv_52_tablet_100_s_0.jpg",name:"Himalaya Liv.52 Tablet 100'",price:"101.40"},
   {img:"https://www.netmeds.com/images/product-v1/150x150/858143/inlife_omega_3_fish_oil_500_mg_capsules_60s_0_1.jpg",name:"INLIFE Omega 3 Fish Oil 500 Mg Capsules 60",price:"329.34"},
   {img:"https://www.netmeds.com/images/product-v1/150x150/922461/swisse_ultiboost_odourless_high_strength_wild_fish_oil_1500_mg_capsule_60s_0_0.jpg",name:"Swisse Ultiboost Odourless High Strength Wild Fish Oil 1500 Mg Capsule",price:"639.36"}]
-
-   
+var health_data=[{img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1",name:"Lung Care"},
+{img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1",name:"Weight Care"},
+{img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1",name:"Woman Care"},
+{img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg?v=1",name:"Bone and joint pain"},
+{img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg?v=1",name:"Cold & fever"},]
     limited_time(data)
-    energy_booster(xr)
-    brand_days(xr)
-    shop_by_ctegory(xr)
+    energy_booster( data)
+
+    brand_days(data)
+    shop_by_ctegory(data)
     new_on_netmeds(trandind_img)
-    top_brand(xr)
-    categories_in_focus(xr)
-    
+    top_brand(data)
+    categories_in_focus(data)
+
     var cart_data = JSON.parse(localStorage.getItem("cart"))||[]
     function limited_time(arr)
     { 
@@ -915,11 +1100,11 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         var c=1
         pre_button.addEventListener("click",function()
         {   c-=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==0)
             {
                 c=arr.length-1
@@ -932,11 +1117,11 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
 
         next_button.addEventListener("click",function()
         {   c+=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==arr.length-3)
             {
                 c=0
@@ -957,13 +1142,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
-        img1.src = arr[0].avatar;
+        img1.src = arr[0].img;
         
         var details1 = document.createElement("h3")
-        details1.innerText = arr[1].name
+        details1.innerText = arr[0].name
 
         var price1 = document.createElement("h4")
-        price1.innerText=arr[1].createdAt
+        price1.innerText=arr[0].price
 
         div1.append(img1,details1,price1,button1)
 
@@ -976,13 +1161,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
-        img2.src = arr[1].avatar
+        img2.src = arr[1].img
 
         var details2 = document.createElement("h3")
         details2.innerText = arr[1].name
 
         var price2 = document.createElement("h4")
-        price2.innerText=arr[1].createdAt
+        price2.innerText=arr[1].price;
 
         div2.append(img2,details2,price2,button2)
         
@@ -995,13 +1180,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div3 = document.createElement("div")
         var img3 = document.createElement("img");
-        img3.src = arr[3].avatar
+        img3.src = arr[2].img
         
         var details3 = document.createElement("h3")
-        details3.innerText = arr[1].name
+        details3.innerText = arr[2].name
 
         var price3 = document.createElement("h4")
-        price3.innerText=arr[1].createdAt
+        price3.innerText=arr[2].price;
 
         div3.append(img3,details3,price3,button3)
 
@@ -1014,13 +1199,12 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         
         var div4 = document.createElement("div")
         var img4 = document.createElement("img");
-        img4.src = arr[4].avatar
-        
+        img4.src = arr[3].img        
         var details4 = document.createElement("h3")
-        details4.innerText = arr[1].name
+        details4.innerText = arr[3].name
 
         var price4 = document.createElement("h4")
-        price4.innerText=arr[1].createdAt
+        price4.innerText=arr[3].price;
 
         div4.append(img4,details4,price4,button4)
         
@@ -1033,13 +1217,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div5 = document.createElement("div")
         var img5 = document.createElement("img");
-        img5.src = arr[5].avatar;
+        img5.src = arr[4].img;
 
         var details5 = document.createElement("h3")
-        details5.innerText = arr[1].name
+        details5.innerText = arr[4].name
 
         var price5 = document.createElement("h4")
-        price5.innerText=arr[1].created
+        price5.innerText=arr[4].price;
 
         div5.append(img5,details5,price5,button5)
 
@@ -1049,11 +1233,11 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         var c=1
         pre_button.addEventListener("click",function()
         {   c-=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==0)
             {
                 c=arr.length-1
@@ -1066,11 +1250,11 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
 
         next_button.addEventListener("click",function()
         {   c+=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==arr.length-3)
             {
                 c=0
@@ -1092,14 +1276,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
-        img1.src = arr[0].avatar;
+        img1.src = arr[0].img;
         
         var details1 = document.createElement("h3")
-        details1.innerText = arr[1].name
+        details1.innerText = arr[0].name
 
         var price1 = document.createElement("h4")
-        price1.innerText=arr[1].createdAt
-
+        price1.innerText=arr[0].price;
         div1.append(img1,details1,price1,button1)
 
 
@@ -1111,13 +1294,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
-        img2.src = arr[1].avatar
+        img2.src = arr[1].img;
 
         var details2 = document.createElement("h3")
         details2.innerText = arr[1].name
 
         var price2 = document.createElement("h4")
-        price2.innerText=arr[1].createdAt
+        price2.innerText=arr[1].price;
 
         div2.append(img2,details2,price2,button2)
         
@@ -1130,13 +1313,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div3 = document.createElement("div")
         var img3 = document.createElement("img");
-        img3.src = arr[3].avatar
+        img3.src = arr[2].price;
         
         var details3 = document.createElement("h3")
-        details3.innerText = arr[1].name
+        details3.innerText = arr[2].name
 
         var price3 = document.createElement("h4")
-        price3.innerText=arr[1].createdAt
+        price3.innerText=arr[2].price;
 
         div3.append(img3,details3,price3,button3)
 
@@ -1149,13 +1332,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         
         var div4 = document.createElement("div")
         var img4 = document.createElement("img");
-        img4.src = arr[4].avatar
+        img4.src = arr[3].img;
         
         var details4 = document.createElement("h3")
-        details4.innerText = arr[1].name
+        details4.innerText = arr[3].name
 
         var price4 = document.createElement("h4")
-        price4.innerText=arr[1].createdAt
+        price4.innerText=arr[3].price;
 
         div4.append(img4,details4,price4,button4)
         
@@ -1168,13 +1351,13 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         })
         var div5 = document.createElement("div")
         var img5 = document.createElement("img");
-        img5.src = arr[5].avatar;
+        img5.src = arr[4].img;
 
         var details5 = document.createElement("h3")
-        details5.innerText = arr[1].name
+        details5.innerText = arr[4].name
 
         var price5 = document.createElement("h4")
-        price5.innerText=arr[1].created
+        price5.innerText=arr[4].price;
 
         div5.append(img5,details5,price5,button5)
 
@@ -1184,11 +1367,11 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         var c=1
         pre_button.addEventListener("click",function()
         {   c-=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==0)
             {
                 c=arr.length-1
@@ -1201,11 +1384,11 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
 
         next_button.addEventListener("click",function()
         {   c+=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==arr.length-3)
             {
                 c=0
@@ -1222,10 +1405,10 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
-        img1.src = arr[0].avatar;
+        img1.src = arr[0].img;
         
         var details1 = document.createElement("h3")
-        details1.innerText = arr[1].name
+        details1.innerText = arr[0].name
 
 
         div1.append(img1,details1)
@@ -1235,7 +1418,7 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
        
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
-        img2.src = arr[1].avatar
+        img2.src = arr[1].img
 
         var details2 = document.createElement("h3")
         details2.innerText = arr[1].name
@@ -1247,10 +1430,10 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
 
         var div3 = document.createElement("div")
         var img3 = document.createElement("img");
-        img3.src = arr[3].avatar
+        img3.src = arr[3].img
         
         var details3 = document.createElement("h3")
-        details3.innerText = arr[1].name
+        details3.innerText = arr[3].name
 
       
 
@@ -1260,10 +1443,10 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
       
         var div4 = document.createElement("div")
         var img4 = document.createElement("img");
-        img4.src = arr[4].avatar
+        img4.src = arr[4].img
         
         var details4 = document.createElement("h3")
-        details4.innerText = arr[1].name
+        details4.innerText = arr[4].name
 
 
         div4.append(img4,details4)
@@ -1273,10 +1456,10 @@ var data = [{img:"https://www.netmeds.com/images/product-v1/150x150/977198/netme
         
         var div5 = document.createElement("div")
         var img5 = document.createElement("img");
-        img5.src = arr[5].avatar;
+        img5.src = arr[5].img;
 
         var details5 = document.createElement("h3")
-        details5.innerText = arr[1].name
+        details5.innerText = arr[5].name
 
       
 
@@ -1346,10 +1529,10 @@ function top_brand(arr)
         
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
-        img1.src = arr[0].avatar;
+        img1.src = arr[0].img;
         
         var details1 = document.createElement("h3")
-        details1.innerText = arr[1].name
+        details1.innerText = arr[0].name
 
 
         div1.append(img1,details1)
@@ -1359,7 +1542,7 @@ function top_brand(arr)
        
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
-        img2.src = arr[1].avatar
+        img2.src = arr[1].img;
 
         var details2 = document.createElement("h3")
         details2.innerText = arr[1].name
@@ -1371,10 +1554,10 @@ function top_brand(arr)
 
         var div3 = document.createElement("div")
         var img3 = document.createElement("img");
-        img3.src = arr[3].avatar
+        img3.src = arr[2].img;
         
         var details3 = document.createElement("h3")
-        details3.innerText = arr[1].name
+        details3.innerText = arr[2].name
 
       
 
@@ -1384,10 +1567,10 @@ function top_brand(arr)
       
         var div4 = document.createElement("div")
         var img4 = document.createElement("img");
-        img4.src = arr[4].avatar
+        img4.src = arr[3].img;
         
         var details4 = document.createElement("h3")
-        details4.innerText = arr[1].name
+        details4.innerText = arr[3].name
 
 
         div4.append(img4,details4)
@@ -1397,10 +1580,10 @@ function top_brand(arr)
         
         var div5 = document.createElement("div")
         var img5 = document.createElement("img");
-        img5.src = arr[5].avatar;
+        img5.src = arr[4].img;
 
         var details5 = document.createElement("h3")
-        details5.innerText = arr[1].name
+        details5.innerText = arr[4].name
 
       
 
@@ -1424,13 +1607,13 @@ function categories_in_focus(arr)
         })
         var div1 = document.createElement("div")
         var img1 = document.createElement("img");
-        img1.src = arr[0].avatar;
+        img1.src = arr[0].img;
         
         var details1 = document.createElement("h3")
-        details1.innerText = arr[1].name
+        details1.innerText = arr[0].name
 
         var price1 = document.createElement("h4")
-        price1.innerText=arr[1].createdAt
+        price1.innerText=arr[0].price;
 
         div1.append(img1,details1,price1,button1)
 
@@ -1443,13 +1626,13 @@ function categories_in_focus(arr)
         })
         var div2 = document.createElement("div")
         var img2 = document.createElement("img");
-        img2.src = arr[1].avatar
+        img2.src = arr[1].img;
 
         var details2 = document.createElement("h3")
         details2.innerText = arr[1].name
 
         var price2 = document.createElement("h4")
-        price2.innerText=arr[1].createdAt
+        price2.innerText=arr[1].price;
 
         div2.append(img2,details2,price2,button2)
         
@@ -1462,14 +1645,13 @@ function categories_in_focus(arr)
         })
         var div3 = document.createElement("div")
         var img3 = document.createElement("img");
-        img3.src = arr[3].avatar
+        img3.src = arr[2].img;
         
         var details3 = document.createElement("h3")
-        details3.innerText = arr[1].name
+        details3.innerText = arr[2].name
 
         var price3 = document.createElement("h4")
-        price3.innerText=arr[1].createdAt
-
+        price3.innerText=arr[2].price;
         div3.append(img3,details3,price3,button3)
 
 
@@ -1481,13 +1663,13 @@ function categories_in_focus(arr)
         
         var div4 = document.createElement("div")
         var img4 = document.createElement("img");
-        img4.src = arr[4].avatar
+        img4.src = arr[3].img;
         
         var details4 = document.createElement("h3")
-        details4.innerText = arr[1].name
+        details4.innerText = arr[3].name
 
         var price4 = document.createElement("h4")
-        price4.innerText=arr[1].createdAt
+        price4.innerText=arr[3].price;
 
         div4.append(img4,details4,price4,button4)
         
@@ -1500,13 +1682,13 @@ function categories_in_focus(arr)
         })
         var div5 = document.createElement("div")
         var img5 = document.createElement("img");
-        img5.src = arr[5].avatar;
+        img5.src = arr[4].img;
 
         var details5 = document.createElement("h3")
-        details5.innerText = arr[1].name
+        details5.innerText = arr[4].name
 
         var price5 = document.createElement("h4")
-        price5.innerText=arr[1].created
+        price5.innerText=arr[4].name
 
         div5.append(img5,details5,price5,button5)
 
@@ -1516,11 +1698,11 @@ function categories_in_focus(arr)
         var c=1
         pre_button.addEventListener("click",function()
         {   c-=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==0)
             {
                 c=arr.length-1
@@ -1533,11 +1715,11 @@ function categories_in_focus(arr)
 
         next_button.addEventListener("click",function()
         {   c+=1;
-            img1.src = arr[0+c].avatar;
-            img2.src = arr[1+c].avatar;
-            img3.src = arr[3+c].avatar;
-            img4.src = arr[4+c].avatar;
-            img5.src = arr[5+c].avatar;
+            img1.src = arr[0+c].img;
+            img2.src = arr[1+c].img;
+            img3.src = arr[3+c].img;
+            img4.src = arr[4+c].img;
+            img5.src = arr[5+c].img;
             if(c==arr.length-3)
             {
                 c=0
@@ -1549,9 +1731,4 @@ function categories_in_focus(arr)
 
     }
 
-
- 
-
-    
-  
 </script>
